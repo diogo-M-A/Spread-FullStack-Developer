@@ -1,9 +1,12 @@
-import logo from './logo.svg';
+import Counter from "../Counter/Counter"
 import './App.css';
 
 function App() {
   return (
-<h1>Bom dia!</h1>
+    <>
+    <h1>Bom dia!</h1>
+    <Counter/>
+    </>
   );
 }
 
