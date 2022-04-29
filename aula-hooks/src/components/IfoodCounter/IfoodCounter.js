@@ -1,10 +1,13 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import '../IfoodCounter/IfoodCounter.css'
 
 
 export default function IfoodCounter() {
   const [value, setValue] = useState(1)
+  useEffect(()=>{
+    document.getElementById('moeda').innerHTML = 2*value
+  }, [value])
 
   function up(){
     setValue(value + 1)
@@ -21,6 +24,7 @@ export default function IfoodCounter() {
       <button onClick={down}>-</button> 
       {value}
       <button onClick={up}>+</button>
+      <button id='moeda'>12,00</button>
     </div>
   )
 }
