@@ -1,0 +1,21 @@
+/* criar um flex container torna todos os "filhos" desse container flex items.
+
+*/
+
+.flex{
+  max-width: 300px;
+  padding: 10px;
+  border: 2px solid;
+  display: flex;
+}
+
+/* O display flex faz com que os elementos se adaptem ao tamanho do container,
+tornando a tela responsiva */
+
+.item{
+  background-color: firebrick;
+  margin: 5px;
+  color: white;
+}
+
+/* Eixos: row, row-reverse, column, column-reverse */
